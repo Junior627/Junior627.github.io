@@ -1,26 +1,40 @@
+html{
+    background-color: #f3f1f2;
+    align-items: center;
+}
 img{
     image-rendering: pixelated;
 }
+
+.page-title{
+    width:50%;
+    margin:auto;
+    border: 10px solid transparent;
+    border-image-slice: 10% 30% fill;
+    border-image-source:url("/assets/borderImagetest.png") ;
+    border-image-repeat: rounded;
+}
 #display{
     background-color: rgb(208, 233, 203);
-    border: 1px solid;
+    border: 1px ;
     border-style: dashed;
     width: 85%;
     display: grid;
     padding:5%;
+    margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 10px;
     z-index: -10;
 }
 
 .gallery{
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 240px;
     float:left;
-    border: 1px solid; 
 }
 .block{
     float:left;
@@ -33,28 +47,29 @@ img{
     transform: translate(0, 20%);
     margin-top: 5%;
     width: 95%;
+    border: 2px outset chocolate;
+    border-radius: 25% 25% 0% 0% ;
     animation-name: hideThumbnail;
     animation-timing-function: ease-in;
     animation-duration: .35s;
 }
 .gallery:hover .thumbnail{
-    transform: translate(0, 0);
+    transform: translate(0, 1%);
     animation-name: showThumbnail;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
     animation-duration: .5s;
 }
 @keyframes showThumbnail {
     0% {transform: translate(0, 20%);}
-    25% {transform: scaleY(1.05);}
-    30% {transform: translate(0, 0);}
-    75%{transform: scaleY(1);}
+    25% {transform: scaleY(1.15);}
+    50%{transform: scaleY(1);}
     100% {
         
-        transform: translate(0, 0);
+        transform: translate(0, 1%);
         }
 }
 @keyframes hideThumbnail {
-    0% {transform: translate(0, 0);}
+    0% {transform: translate(0, 1%);}
     25% {transform: scaleY(1.0);}
     100% {
         
@@ -62,7 +77,7 @@ img{
         }
 }
 .title{
-    border: 1px solid ;
+    border: 1px solid rgb(49, 94, 95);
     display: inline;
     border-radius: 25px;
     text-align: center;
@@ -73,8 +88,8 @@ img{
     margin: auto;
     top:50%;
     left: 50%;
-    transform: translate(-50%, 25%);
-    background-color: rgb(135, 139, 143);
+    transform: translate(-50%, 10%);
+    background-color: rgb(113, 160, 142);
     color:floralwhite;
     z-index: 1;
     font-size: large;
@@ -84,9 +99,9 @@ span {
   white-space: nowrap;
 }
 .desc{
-    border: 2px solid rgb(17, 86, 107);
+    border: 2px dashed rgb(17, 86, 107);
     display:block;
-    height: 120px;
+    height: 140px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -98,11 +113,13 @@ span {
     
 }
 .note{
+    margin-top: 25px;
     text-align: center;
-    padding-bottom: 5px;
+    padding: 10px;
     width: 180px;
-    height: 120px;
+    height: 180px;
     overflow: auto;
+    border: 1px dashed rgb(153, 183, 209);
     background-color: rgb(255, 254, 245);
 }
 ::-webkit-scrollbar {
