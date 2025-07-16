@@ -1,23 +1,77 @@
 html{
-    background-color: #f3f1f2;
+    background-color: rgb(236, 174, 142);
     align-items: center;
 }
 img{
     image-rendering: pixelated;
 }
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
+#navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a{
+    text-align: end;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navitem{
+    transform: translate(0%, 0);
+    animation-name: slideToRight;
+    animation-timing-function: ease-in;
+    animation-duration: .35s;
+}
+
+.navitem:hover{
+    transform: translate(-10%, 0);
+    animation-name: slideToLeft;
+    animation-timing-function: ease-out;
+    animation-duration: .35s;
+}
+
+@keyframes slideToRight {
+    0% {transform: translate(-10%, 0);}
+    100% {transform: translate(0, 0%);}
+}
+
+@keyframes slideToLeft {
+    0% {transform: translate(0%, 0);}
+    100% {transform: translate(-10%, 0%);}
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 .page-title{
     width:50%;
     margin:auto;
     border: 10px solid transparent;
     border-image-slice: 10% 30% fill;
-    border-image-source:url("/assets/borderImagetest.png") ;
     border-image-repeat: rounded;
 }
 #display{
-    background-color: rgb(208, 233, 203);
+    background-color: #ffecd6;
     border: 1px ;
-    border-style: dashed;
+    border-color: #ffd4a3;
+    border-style: solid;
+    border-radius: 30px;
     width: 85%;
     display: grid;
     padding:5%;
@@ -114,7 +168,9 @@ span {
 }
 .note{
     margin-top: 25px;
+    color: #000;
     text-align: center;
+    vertical-align: middle;
     padding: 10px;
     width: 180px;
     height: 180px;

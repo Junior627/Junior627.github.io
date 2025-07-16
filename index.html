@@ -5,9 +5,21 @@
     </head>
 <body>
 
-<h1>
-    Junior Siguencia
-</h1>
+<div id="top">
+    <h1>
+        Junior Siguencia
+    </h1>
+    <ul id="navbar">
+        <li class="navitem"><a href="index.html"> Home </a></li>
+        <li class="navitem"><a href=""> Gallery </a></li>
+        <li class="navitem"><a href="about-me.html"> Home </a></li>
+    </ul>
+</div>
+
+<p>
+    Welcome to my site!
+</p>
+
 
 <div class = "page-title">
     <h3> Project Lineup</h3>
@@ -16,22 +28,27 @@
         
     
     <!-- this will be testing the portfolio blogs-->
-    <div class = "gallery">
-        <img class = "thumbnail" src ="assets/squishy.png">
-        <div class = "block">
-            <div class = "title">
-                <p><span>Kinect-o-Ware</span> </p>
+    
+        <div class = "gallery" onclick="VisitProject()">
+            <a href="kinect-o-ware.html" class = "gallery">
+            <img class = "thumbnail" src ="assets/squishy.png">
+            <div class = "block">
+                <div class = "title">
+                    <p><span>Kinect-o-Ware</span> </p>
+                </div>
+                <div class = "desc">
+                    <p class ="note">
+                        A fast-paced minigame Game Show where you are the controller!
+                        <br>
+                        <br>
+                        Made with Unity <br> and the Kinect
+                    </p>
+                </div>
             </div>
-            <div class = "desc">
-                <p class ="note">
-                    A fast-paced minigame Game Show where you are the controller!
-                    <br>
-                    <br>
-                    Made with Unity <br> and the Kinect
-                </p>
-            </div>
+            </a>
         </div>
-    </div>
+    
+
     <div class = "gallery">
         <img class = "thumbnail" src ="assets/squishy.png">
         <div class = "block">
@@ -39,13 +56,14 @@
                 <p><span>Kinect LED Mirror</span> </p>
             </div>
             <div class = "desc">
-                <p class ="note">This is Squishy<br>  
-                Please be Kind to him<br>This is Squishy<br>  
-                Please be Kind to him<br>This is Squishy<br>  
-                Please be Kind to him<br></p>
+                <p class ="note">A 48x32 LED mirror that tracks the user's movements
+
+                    
+                </p>
             </div>
         </div>
     </div>
+
     <!-- this will be testing the portfolio blogs-->
     <div class = "gallery">
         <img class = "thumbnail" src ="assets/squishy.png">
@@ -64,6 +82,7 @@
     
     
 </div>
-
+<script src ="ProjectViewer.js">
+</script>
 </body>
 </html>
