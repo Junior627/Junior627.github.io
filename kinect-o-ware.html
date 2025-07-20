@@ -2,17 +2,158 @@
 <html>
     <head>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Concert+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Potta+One&family=Racing+Sans+One&display=swap" rel="stylesheet">
     </head>
 </html>
 <body>
     <div id="top">
+    <div>
+        
+    </div>
+    <div class = "name">
         <h1>
             Junior Siguencia
         </h1>
-        <ul id="navbar">
-            <li class="navitem"><a href=""> Home </a></li>
-            <li class="navitem"><a href=""> Gallery </a></li>
-            <li class="navitem"><a href="about-me.html"> Home </a></li>
-        </ul>
+        <h2>
+            Game Developer, Programmer and Artist 
+        </h2>
     </div>
+    
+    <ul id="navbar">
+        <li class="navitem">
+            <div class = "navcontainer">   
+                <a href="index.html"> 
+                    <span>Home</span> 
+                    <div class = "navimage">   
+                        <img class ="navNotHovered" src ="assets/navBarItem.svg"> 
+                        <img class ="navHovered" src ="assets/navBarItemHover.svg">
+                    </div>  
+                </a>
+            </div>
+            
+        </li>
+        <li class="navitem">
+            
+            <div class = "navcontainer">   
+                <a href="index.html"> 
+                    <span>Gallery</span>  
+                    <div class = "navimage">   
+                        <img class ="navNotHovered" src ="assets/navBarItem.svg"> 
+                        <img class ="navHovered" src ="assets/navBarItemHover.svg">
+                    </div>  
+                </a>
+            </div>
+        </li>
+        <li class="navitem">
+            
+            <div class = "navcontainer">   
+                <a href="about-me.html"> 
+                    <span> About Me</span> 
+                    <div class = "navimage">   
+                        <img class ="navNotHovered" src ="assets/navBarItem.svg"> 
+                        <img class ="navHovered" src ="assets/navBarItemHover.svg">
+                    </div>  
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> Kinect-o-Ware</h3>
+        <p> An Interactive Competitve Game Show</p>
+    </div>
+
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="assets/kinectOWare/winMinigame.png">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/winMinigame.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/hintGame.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/shieldCat.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/grabApple.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/holeWall.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/findRat.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/magnetPull.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/makePizza.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectOWare/slashGhost.png">
+            </div>
+        </div>
+    </div>
+
+    <div class ="blank-space"></div>
+    
+    <div class ="page-body">
+        <div class ="overview">
+            <div class = "section-header">
+                <p> Overview</p>
+            </div>
+            <p style="font-weight: bold;">
+                Kinect-o-Ware is a single player interactive video game where you are the controller! 
+                Compete in a game show where you try to reach the top of the leaderboard by competing various mini-challenges
+            </p>
+            <div class="line-break"></div>
+            <p>
+                <strong>Role:</strong> Director, Programmer, Artist
+                <br>
+                <strong>Duration:</strong> February 2025 - April 2025 (10 Weeks)
+                <br>
+                <strong>Medium:</strong> Digital Video Game (made in Unity / C#)
+                <br>
+                <strong>Team Size:</strong> 1
+                <br>
+            </p>
+        </div>
+
+        <div class="design">
+            <p>
+                The soul of this project was the interactivity the Kinect offers. 
+                <br>
+                Originally, this project only consisted of a minigame that drew inspiration from the Hole in the Wall game show. I utilized the Kinect's depth sensors to capture the user's body and display it on the screen as a moving texture.
+                <br>
+                This texture would then need to fill a static PNG texture which would act as the "hole" the player would need to fit through.
+                For feedback reasons, I made it so that the pixels that overlap with the "hole" texture are a different color from the pixels of the player texture.
+                <br><br>
+
+                Below is the first iteration of the project
+            </p>
+            <video width="320" height="240" controls>
+                <source src="assets/kinectOWare/kinectHoleVisual.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+
+    </div>
+    <script src="portfolioViewer.js"></script>
 </body>

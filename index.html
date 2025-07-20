@@ -2,17 +2,64 @@
 <html>
     <head>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Concert+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Potta+One&family=Racing+Sans+One&display=swap" rel="stylesheet">
     </head>
 <body>
 
 <div id="top">
-    <h1>
-        Junior Siguencia
-    </h1>
+    <div>
+        
+    </div>
+    <div class = "name">
+        <h1>
+            Junior Siguencia
+        </h1>
+        <h2>
+            Game Developer, Programmer and Artist 
+        </h2>
+    </div>
+    
     <ul id="navbar">
-        <li class="navitem"><a href="index.html"> Home </a></li>
-        <li class="navitem"><a href=""> Gallery </a></li>
-        <li class="navitem"><a href="about-me.html"> Home </a></li>
+        <li class="navitem">
+            <div class = "navcontainer">   
+                <a href="index.html"> 
+                    <span>Home</span> 
+                    <div class = "navimage">   
+                        <img class ="navNotHovered" src ="assets/navBarItem.svg"> 
+                        <img class ="navHovered" src ="assets/navBarItemHover.svg">
+                    </div>  
+                </a>
+            </div>
+            
+        </li>
+        <li class="navitem">
+            
+            <div class = "navcontainer">   
+                <a href="index.html"> 
+                    <span>Gallery</span>  
+                    <div class = "navimage">   
+                        <img class ="navNotHovered" src ="assets/navBarItem.svg"> 
+                        <img class ="navHovered" src ="assets/navBarItemHover.svg">
+                    </div>  
+                </a>
+            </div>
+        </li>
+        <li class="navitem">
+            
+            <div class = "navcontainer">   
+                <a href="about-me.html"> 
+                    <span> About Me</span> 
+                    <div class = "navimage">   
+                        <img class ="navNotHovered" src ="assets/navBarItem.svg"> 
+                        <img class ="navHovered" src ="assets/navBarItemHover.svg">
+                    </div>  
+                </div>
+            </a>
+        </li>
+        
     </ul>
 </div>
 
@@ -22,7 +69,7 @@
 
 
 <div class = "page-title">
-    <h3> Project Lineup</h3>
+    <h3> Project Highlights</h3>
 </div>
 <div id="display">
         
@@ -31,17 +78,18 @@
     
         <div class = "gallery" onclick="VisitProject()">
             <a href="kinect-o-ware.html" class = "gallery">
-            <img class = "thumbnail" src ="assets/squishy.png">
+            <img class = "thumbnail" src ="assets/kinectOWare/cover.png">
             <div class = "block">
                 <div class = "title">
-                    <p><span>Kinect-o-Ware</span> </p>
+                    <p><span>Kinect -o- Ware</span> </p>
                 </div>
+
                 <div class = "desc">
                     <p class ="note">
-                        A fast-paced minigame Game Show where you are the controller!
+                        A fast-paced Game Show where you are the controller! Complete various challenges to reach the top of the leaderboard!
                         <br>
                         <br>
-                        Made with Unity <br> and the Kinect
+                        Made with the Unity Game Engine and the Kinect 360
                     </p>
                 </div>
             </div>
@@ -49,19 +97,37 @@
         </div>
     
 
-    <div class = "gallery">
-        <img class = "thumbnail" src ="assets/squishy.png">
-        <div class = "block">
-            <div class = "title">
-                <p><span>Kinect LED Mirror</span> </p>
+    <div class = "gallery" >
+        <a href="kinect-led-mirror.html" class = "gallery">
+            <img class = "thumbnail" src ="assets/squishy.png">
+            <div class = "block">
+                <div class = "title">
+                    <p><span>Kinect LED Mirror</span> </p>
+                </div>
+                <div class = "desc">
+                    <p class ="note">A 48x32 LED matrix mirror that reflects and lights up the user's outline!
+                        <br><br> Made with Raspberry PI and the Kinect 360
+                    </p>
+                </div>
             </div>
-            <div class = "desc">
-                <p class ="note">A 48x32 LED mirror that tracks the user's movements
+        </a>
+    </div>
 
-                    
-                </p>
+    <!-- this will be testing the portfolio blogs-->
+    <div class = "gallery">
+        <a href="copy-n-haste.html" class = "gallery">
+            <img class = "thumbnail" src ="assets/copyNHaste/cover.png">
+            <div class = "block">
+                <div class = "title">
+                    <p><span>Copy n' Haste</span> </p>
+                </div>
+                <div class = "desc">
+                    <p class ="note"> You are hired as a shoddy counterfeit artist and you must recreate famous classical paintings!
+                        <br><br> Made with the Unity Game Engine and C#
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <!-- this will be testing the portfolio blogs-->
@@ -69,13 +135,12 @@
         <img class = "thumbnail" src ="assets/squishy.png">
         <div class = "block">
             <div class = "title">
-                <p><span>Kinect-o-Ware</span> </p>
+                <p><span>Copy n' Haste</span> </p>
             </div>
             <div class = "desc">
-                <p class ="note">This is Squishy<br>  
-                Please be Kind to him<br>This is Squishy<br>  
-                Please be Kind to him<br>This is Squishy<br>  
-                Please be Kind to him<br></p>
+                <p class ="note"> You are hired as a shoddy counterfeit artist and you must recreate famous classical paintings!
+                    <br><br> Made with the Unity Game Engine and C#
+                </p>
             </div>
         </div>
     </div>

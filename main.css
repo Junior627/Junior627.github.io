@@ -1,78 +1,57 @@
 html{
-    background-color: rgb(236, 174, 142);
+    background-color: #ccaa88;
     align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
 }
-img{
-    image-rendering: pixelated;
-}
-#top{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-#navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-}
-
-li a{
-    text-align: end;
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-li a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.navitem{
-    transform: translate(0%, 0);
-    animation-name: slideToRight;
-    animation-timing-function: ease-in;
-    animation-duration: .35s;
-}
-
-.navitem:hover{
-    transform: translate(-10%, 0);
-    animation-name: slideToLeft;
-    animation-timing-function: ease-out;
-    animation-duration: .35s;
-}
-
-@keyframes slideToRight {
-    0% {transform: translate(-10%, 0);}
-    100% {transform: translate(0, 0%);}
-}
-
-@keyframes slideToLeft {
-    0% {transform: translate(0%, 0);}
-    100% {transform: translate(-10%, 0%);}
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+.blank-space{
+  display: block;
+  width: 30%;
+  height: 30px;
 }
 .page-title{
+    
     width:50%;
-    margin:auto;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
     border: 10px solid transparent;
     border-image-slice: 10% 30% fill;
     border-image-repeat: rounded;
+    background-color: #336644;
+    
+    border-radius: 15px 15px 0px 0px;
+}
+
+.page-title h3{
+    font-family: "Concert One", sans-serif;    
+    color:#ffecd6;
+    margin: 16px;
+    text-shadow: 0px 2px 0px #221122;
+    font-size: 40px;
+}
+@media screen and (max-width: 480px){
+  .page-title h3{
+      font-family: "Concert One", sans-serif;    
+      color:#ffecd6;
+      margin: 16px;
+      text-shadow: 0px 2px 0px #221122;
+      font-size: 24px;
+  }
+}
+.page-title p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:#ccaa88;
+  font-size: 14px;
 }
 #display{
     background-color: #ffecd6;
     border: 1px ;
-    border-color: #ffd4a3;
+    border-color: #bb7777;
     border-style: solid;
     border-radius: 30px;
     width: 85%;
+    max-width: 1400px;
     display: grid;
     padding:5%;
     margin: auto;
@@ -96,6 +75,8 @@ li a:hover:not(.active) {
     height: 50%;
 }
 .gallery .thumbnail{
+    filter: grayscale(100%);
+    opacity: .8;
     position: relative;
     object-fit: cover;
     transform: translate(0, 20%);
@@ -108,6 +89,8 @@ li a:hover:not(.active) {
     animation-duration: .35s;
 }
 .gallery:hover .thumbnail{
+    filter: grayscale(0%);
+    opacity: 1;
     transform: translate(0, 1%);
     animation-name: showThumbnail;
     animation-timing-function: ease-out;
@@ -146,12 +129,12 @@ li a:hover:not(.active) {
     background-color: rgb(113, 160, 142);
     color:floralwhite;
     z-index: 1;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Potta One", system-ui;
 }
 span {
   white-space: nowrap;
 }
+
 .desc{
     border: 2px dashed rgb(17, 86, 107);
     display:block;
@@ -164,11 +147,12 @@ span {
     border-radius:0px 0px 25px 25px;
     background-color: rgb(82, 81, 75);
     padding:15px;
-    
 }
+
 .note{
+    font-family: "Kantumruy Pro", sans-serif;;
     margin-top: 25px;
-    color: #000;
+    color: #221122;
     text-align: center;
     vertical-align: middle;
     padding: 10px;
@@ -177,6 +161,13 @@ span {
     overflow: auto;
     border: 1px dashed rgb(153, 183, 209);
     background-color: rgb(255, 254, 245);
+    position: relative;
+    box-shadow: 
+      2px 2px 0px rgb(255, 254, 245),
+      -2px 2px 0px rgb(255, 254, 245),
+      2px -2px 0px rgb(255, 254, 245),
+      -2px -2px 0px rgb(255, 254, 245)
+    ;
 }
 ::-webkit-scrollbar {
   width: 4px;
@@ -184,7 +175,7 @@ span {
   overflow-y: hidden;
 }
 ::-webkit-scrollbar:hover {
-  width: 10px;
+  width: 4px;
   margin-right:5px;
   overflow-y: auto;
 }
@@ -206,3 +197,4 @@ span {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
+

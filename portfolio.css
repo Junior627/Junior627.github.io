@@ -1,0 +1,144 @@
+.photo-display{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+}
+.photo-row{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    vertical-align: middle;
+    justify-content: space-evenly;
+    display: flex;
+}
+.photo-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.photo-standby{
+    width: 25%;
+    vertical-align: middle;
+    align-items: center;
+    padding: 5px;
+}
+.photo-standby img{
+    filter: grayscale(90%);
+    max-width: 180px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: scale-down;
+    opacity: .8;
+    animation-name: hideDisplay;
+    animation-timing-function: ease-out;
+    animation-duration: .15s;
+    z-index: -1;
+}
+
+.photo-standby img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    animation-name: showDisplay;
+    animation-timing-function: ease-out;
+    animation-duration: .15s;
+    transform: scale(1.25,1.25);
+    z-index: 1;
+}
+
+.photo-section{
+    width: 85%;
+    max-width: 1000px;
+    min-width: 200px;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 2px double #bb7777;
+    background-color: #ddccbb;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+#highlight-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: scale-down;
+}
+
+.column.side{
+    width: 10%;
+}
+.column.middle{
+    width: 80%;
+}
+.column{
+    float: left;
+    height:0%
+}
+
+@keyframes showDisplay {
+    0% {transform: scale(1, 1);}
+    100% {
+        
+        transform: scale(1.25, 1.25);
+        }
+}
+@keyframes hideDisplay {
+    0% {transform: scale(1.25, 1.25);}
+    100% {
+        transform: scale(1.0, 1.0);
+        }
+}
+.page-body{
+    margin: auto;
+    width: 60%;
+    min-width: 240px;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    margin: auto;
+}
+.overview {
+    width: 80%;
+    margin: auto;
+    background-color: #889999;
+    padding: 3%;
+    border: 2px solid #ddccbb;
+    color: #332233;
+    border-radius: 5px;
+}
+.design{
+    width: 80%;
+    margin: auto;
+    
+}
+.overview p{
+    text-align: left;
+    font-size: 18px;
+}
+.section-header p{
+    font-weight: bolder;
+    margin: auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+p{
+    font-family: "Kantumruy Pro", sans-serif;;
+}
+
+video source{
+    margin: auto;
+    margin-left: 50%;
+}
+
+.line-break{
+    height: 2px;
+    background-color: #776688;
+}

@@ -1,0 +1,117 @@
+img{
+    image-rendering: pixelated;
+}
+a{
+    text-decoration: none;
+}
+#top{
+    width: 90%;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    margin: auto;
+    display: grid;
+    border: 1px solid cadetblue;
+}
+.name{
+    border: 1px solid cadetblue;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .name{
+        text-align: start;
+    }
+    #top{
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        display: flex;
+        border: 1px solid cadetblue;
+    }
+}
+#navbar{
+    list-style-type: none;
+    width: 25%;
+    height: auto;
+    padding-right: 10%;
+    margin: auto;
+}
+
+.navimage{
+    z-index: -1;
+    transform: translate(0,-20px);
+    left: 0px;
+    position: absolute;
+}
+.navcontainer{
+    position: relative;
+    display: inline-block;
+}
+.navitem:hover .navNotHovered{
+    display: none;
+}
+.navitem:hover .navHovered{
+    display: block;
+}
+.navHovered{
+    display: none;
+}
+svg{
+    fill: #04AA6D;
+}
+li span{
+    text-align: end;
+    display: block;
+    color: #334444;
+    padding: 8px 16px;
+    font-size: large;
+    text-shadow: 1px 1px 0px #ddccbb;
+    text-decoration: none;
+    font-family:"Racing Sans One", sans-serif;
+}
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+li a:hover:not(.active) {
+
+}
+
+.navitem{ 
+    width: 50px;   
+    transform: translate(0%, 0);
+    animation-name: slideToRight;
+    animation-timing-function: ease-in;
+    animation-duration: .35s;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.navitem:hover span{
+    color:#332233;
+    text-shadow:
+    1px 1px 0 #ddccbb,
+    -1px 1px 0 #ddccbb,
+    -1px -1px 0 #ddccbb,
+    1px -1px 0 #ddccbb;
+}
+.navitem:hover{
+    transform: translate(-100%, 0);
+    animation-name: slideToLeft;
+    animation-timing-function: ease-out;
+    animation-duration: .35s;
+}
+
+@keyframes slideToRight {
+    0% {transform: translate(-100%, 0);}
+    100% {transform: translate(0, 0%);}
+}
+
+@keyframes slideToLeft {
+    0% {transform: translate(0%, 0);}
+    100% {transform: translate(-100%, 0%);}
+}
