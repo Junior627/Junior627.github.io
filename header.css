@@ -14,11 +14,16 @@ a{
     align-items: center;
     margin: auto;
     display: grid;
-    border: 1px solid cadetblue;
 }
 .name{
-    border: 1px solid cadetblue;
     text-align: center;
+    color: #284d3e;
+    font-family: "Kantumruy Pro", sans-serif; 
+    text-shadow: 1px 1px 0px #ddccbb,
+    -1px 1px 0px #d6c3ac,
+     -1px -1px 0px #eee0d0,
+    1px -1px 0px #d1b294;
+    font-size: large;
 }
 @media screen and (max-width: 600px) {
     .name{
@@ -30,7 +35,6 @@ a{
         align-items: center;
         margin: auto;
         display: flex;
-        border: 1px solid cadetblue;
     }
 }
 #navbar{

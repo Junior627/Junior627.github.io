@@ -3,6 +3,10 @@ html{
     align-items: center;
     max-width: 100%;
     overflow-x: hidden;
+    
+}
+body{
+  padding-bottom: 20px;
 }
 .blank-space{
   display: block;

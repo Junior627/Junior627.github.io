@@ -19,7 +19,7 @@
             Junior Siguencia
         </h1>
         <h2>
-            Game Developer, Programmer and Artist 
+            Welcome to my site!
         </h2>
     </div>
     
@@ -92,6 +92,9 @@
             <div class ="photo-standby">
                 <img onclick="changeDisplayImage(this)" src = "assets/kinectMirror/anotherSelfie.png">
             </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "assets/kinectMirror/idea292_final_poster.png">
+            </div>
         </div>
     </div>
     <div class ="blank-space"></div>
@@ -119,20 +122,20 @@
         <div class ="blank-space"></div>
         <div class="design">
             <p>
-                The soul of this project was the interactivity the Kinect offers. 
-                <br>
-                Originally, this project only consisted of a minigame that drew inspiration from the Hole in the Wall game show. I utilized the Kinect's depth sensors to capture the user's body and display it on the screen as a moving texture.
-                <br>
-                This texture would then need to fill a static PNG texture which would act as the "hole" the player would need to fit through.
-                For feedback reasons, I made it so that the pixels that overlap with the "hole" texture are a different color from the pixels of the player texture.
+                Created for Wesleyan University's Interdisciplinary Project Lab class (IDEA292), the Kinect LED Mirror captures anything in its vision and replicates its outline via reflecting through an LED Matrix.
+                <br><br>
+                This was done with the Microsoft Kinect 360 and its depth sensors.
+                
+                By retrieving the depth data from the sensors and using a custom made filter program, I am able to gather plots of depth data from a 640x480 matrix and truncate the data to a 48x32 matrix.
+                <br><br>
+                
+                This program was made in the C language and was installed to a Raspberry Pi using the Linux OS.
+
                 <br><br>
 
-                Below is the first iteration of the project
+                This mirror was held as a showcase for the IDEA292 final and is kept in Wesleyan University's Olin Library.
+
             </p>
-            <video width="320" height="240" controls>
-                <source src="assets/kinectOWare/kinectHoleVisual.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
         </div>
 
 

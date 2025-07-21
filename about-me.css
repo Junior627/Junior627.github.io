@@ -1,0 +1,15 @@
+#junior-display{
+    background-color: #ffecd6;
+    border: 1px ;
+    border-color: #bb7777;
+    border-style: solid;
+    border-radius: 0px 30px;
+    width: 85%;
+    max-width: 1400px;
+    display: grid;
+    padding:5%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px;
+    z-index: -10;
+}
