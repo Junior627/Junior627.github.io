@@ -82,10 +82,12 @@ body{
     filter: grayscale(100%);
     opacity: .8;
     position: relative;
-    object-fit: cover;
+    object-fit:cover;
     transform: translate(0, 20%);
     margin-top: 5%;
     width: 95%;
+    aspect-ratio: 1/1;
+    max-height: 256px;
     border: 2px outset chocolate;
     border-radius: 25% 25% 0% 0% ;
     animation-name: hideThumbnail;

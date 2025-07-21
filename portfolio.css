@@ -142,3 +142,15 @@ video source{
     height: 2px;
     background-color: #776688;
 }
+
+.design h3{
+    font-family: "Kantumruy Pro", sans-serif;;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.design h4{
+    font-size: large;
+    font-weight: bold;
+    font-family: "Kantumruy Pro", sans-serif;;
+}
