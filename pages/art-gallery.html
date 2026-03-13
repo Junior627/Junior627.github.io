@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Gallery </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../assets/squishy.png">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+    </head>
+</html>
+<script type=module src ="../js/templateLoader.js"></script>
+<body>
+    <my-header></my-header>
+
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> Gallery</h3>
+        <p> A Small Selection of my Art</p>
+    </div>
+
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="../assets/gallery/all_allies.png">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/kirbymon_sheet.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/pillbug.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/torunki_sprite_sheet.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/fusion_sheet.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/Pizza_Cook.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/fruit_collection.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/1bit_Jam_2025_BIG.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/cursor_icon.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/Hostie_Transition.gif">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/SliceSwipe_Person.gif">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/type_sheets.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/tv_GameGuides.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/gallery/playerbacteria.gif">
+            </div>
+        </div>
+    </div>
+
+    <div class ="blank-space"></div>
+    
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <div class="lightbox-container">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    <script src ="../js/portfolioViewer.js">
+    </script>
+</body>

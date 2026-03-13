@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Copy n' Haste </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../assets/squishy.png">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+    </head>
+</html>
+<script type=module src ="../js/templateLoader.js"></script>
+<body>
+    <my-header></my-header>
+
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> Copy n' Haste</h3>
+        <p> A Quick Sketch-y Videogame</p>
+    </div>
+
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="../assets/copyNHaste/titleScreen.png">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/copyNHaste/titleScreen.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/copyNHaste/baseDrawing.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/copyNHaste/coveredDrawing.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/copyNHaste/comparisionDrawing.png">
+            </div>
+
+        </div>
+    </div>
+
+    <div class ="blank-space"></div>
+    
+    <div class ="page-body">
+        <div class ="overview">
+            <div class = "section-header">
+                <p> Overview</p>
+            </div>
+            <p style="font-weight: bold;">
+                Copy n' Haste is a videogame where you must draw counterfeit pictures of famous paintings. However, you are on the clock and must complete several drawings to the best of your ability! The more accurate your drawings are, the more money you get as a reward! 
+                <br><br>
+                This was completed for Wesleyan University's Videogame Architecture and Programming in Unity class
+            </p>
+            
+            <div class="line-break"></div>
+            <p>
+                <strong>Role:</strong> Programmer, Asset Integration
+                <br>
+                <strong>Duration:</strong> April 2025 (2 Weeks)
+                <br>
+                <strong>Medium:</strong> Digital Video Game (made in Unity / C#)
+                <br>
+                <strong>Team Size:</strong> 3
+                <br>
+            </p>
+        </div>
+
+        <div class="blank-space"></div>
+        <div class="design">
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Responsibilities</h3>
+                    
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+
+                <h4> Programming</h4>
+                <p>
+                    As the sole programmer, I worked in the Unity game engine using the C# language
+                    <ul>
+                        <li>
+                            <p>
+                                Compute shaders that read image and color information
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Run-time texture editing that let the user draw
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Object data scripts that save vital information for each drawing
+                            </p>
+                        </li>
+
+                    </ul>
+                </p>
+            </div>
+                
+            <div class="blank-space"></div>
+                <div class="design-section">
+                    <div class="section-title">
+                        <h3> Acknowledgements</h3> 
+                    </div>
+                    <div class ="line-break">
+                    
+                </div>
+                    <p>
+                        I want to extend gratitude towards Stephanie Huang and Ale Philippides for joining me in this project with their artwork and music respectively.
+                        I want to give special thanks to Ben Sulzinky for teaching the class and providing feedback!
+                    </p>
+                </div>
+                    
+            </div>
+        </div>
+
+        
+    </div>
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <div class="lightbox-container">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    <script src ="../js/portfolioViewer.js">
+    </script>
+</body>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guess That Pokemon </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../assets/squishy.png">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+</html>
+<script type=module src ="../js/templateLoader.js"></script>
+<body>
+    <my-header></my-header>
+    
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> Guess That PKMN!</h3>
+        <p> PKMN Quiz Web Game!</p>
+    </div>
+
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="../assets/guessPKMN/pre_game.png">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/guessPKMN/pre_game.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/guessPKMN/mid_game_easy.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/guessPKMN/mid-game.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/guessPKMN/mid_game_hard.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/guessPKMN/full_complete.png">
+            </div>
+
+        </div>
+    </div>
+
+    <div class ="blank-space"></div>
+    
+    <div class ="page-body">
+        <div class ="overview">
+            <div class = "section-header">
+                <p> Overview</p>
+            </div>
+            <p style="font-weight: bold;">
+                Guess That Pokémon is a web game where you test your Pokémon knowledge in a fast-paced quiz!
+                <br><br>
+                You can play <a href="https://junior627.github.io/guess-that-pokemon/"> here!</a>
+                <br><br>
+                This project is apart of my 2026 Monthly Project Commitment
+            </p>
+            <div class="line-break"></div>
+            <p>
+                <strong>Role:</strong> Software Engineer
+                <br>
+                <strong>Duration:</strong> January 2026
+                <br>
+                <strong>Medium:</strong> Web Game
+                <br>
+                <strong>Team Size:</strong> Solo
+                <br>
+            </p>
+        </div>
+
+        <div class="blank-space"></div>
+        <div class="design">
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Responsibilities</h3>
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+
+                <h4>Software Engineer / Web Development</h4>
+                <p>
+                    All code and concept is entirely done by me, a quick list of what that entails
+                    <ul>
+                        <li>
+                            <p>
+                                Game design and logic needed to prepare quizzes for players based on their selected options
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                API caching and loading to quickly load high-res Pokémon artwork
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                All image filters are done in JS by manipulating pixel data
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Programmed systems that change the sprites depending on the context
+                            </p>
+                        </li>
+
+                    </ul>
+                </p>
+            </div>
+            <div class="blank-space"></div>
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Acknowledgements</h3>
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+                <p>
+                    I want to extend gratitude towards Nuuluz, who provided any extra sprites and artwork to give the website its own look, thank you! I also want to thank the PokeAPI team for their data resource, making this project possible. All official artwork belonds to Nintendo, Game Freak and the Pokemon Company
+                </p>
+            </div>
+            
+        </div>
+
+
+    </div>
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <div class="lightbox-container">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    <script src ="../js/portfolioViewer.js">
+</script>
+</body>

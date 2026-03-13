@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/assets/squishy.png">
+
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+    </head>
+<body>
+    <my-header></my-header>
+    <div class="blank-space"></div>
+
+    <div class = "page-title">
+            <h3> Project Highlights</h3>
+            <p> A Collection of My Work</p>
+        </div>
+    <div id="display">
+        
+    
+    <!-- this will be testing the portfolio blogs-->
+
+    <div class = "gallery" onclick="VisitProject()">
+        <a href="./pages/guess-pkmn.html" class = "gallery">
+        <img class = "thumbnail" src ="assets/guessPKMN/cover.png">
+        <div class = "block">
+            <div class = "title">
+                <p><span>Guess That PKMN</span> </p>
+            </div>
+
+            <div class = "desc">
+                <p class ="note">
+                    A fast-paced web game where you have to guess pokemon with various difficulties!
+                    <br>
+                    <br>
+                    Made entirely within JavaScript, HTML, and CSS
+                </p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div class = "gallery" onclick="VisitProject()">
+        <a href="./pages/ink.html" class = "gallery">
+        <img class = "thumbnail" src ="assets/ink/cover.png">
+        <div class = "block">
+            <div class = "title">
+                <p><span>ink.</span> </p>
+            </div>
+
+            <div class = "desc">
+                <p class ="note">
+                    A game where you color the world with your errors
+                    <br>
+                    <br>
+                    Made with the Unity Game Engine and C#
+                </p>
+            </div>
+        </div>
+        </a>
+    </div>
+    
+    <div class = "gallery" onclick="VisitProject()">
+        <a href="./pages/kinect-o-ware.html" class = "gallery">
+        <img class = "thumbnail" src ="assets/kinectOWare/cover.png">
+        <div class = "block">
+            <div class = "title">
+                <p><span>Kinect -o- Ware</span> </p>
+            </div>
+
+            <div class = "desc">
+                <p class ="note">
+                    A fast-paced Game Show where you are the controller! Complete various challenges to reach the top of the leaderboard!
+                    <br>
+                    <br>
+                    Made with the Unity Game Engine and the Kinect 360
+                </p>
+            </div>
+        </div>
+        </a>
+    </div>
+    
+
+    <div class = "gallery" >
+        <a href="./pages/kinect-led-mirror.html" class = "gallery">
+            <img class = "thumbnail" src ="assets/kinectMirror/ledSelfie.png">
+            <div class = "block">
+                <div class = "title">
+                    <p><span>Kinect LED Mirror</span> </p>
+                </div>
+                <div class = "desc">
+                    <p class ="note">A 48x32 LED matrix mirror that reflects and lights up the user's outline!
+                        <br><br> Made with Raspberry PI and the Kinect 360
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- this will be testing the portfolio blogs-->
+    <div class = "gallery">
+        <a href="./pages/copy-n-haste.html" class = "gallery">
+            <img class = "thumbnail" src ="assets/copyNHaste/cover.png">
+            <div class = "block">
+                <div class = "title">
+                    <p><span>Copy n' Haste</span> </p>
+                </div>
+                <div class = "desc">
+                    <p class ="note"> You are hired as a shoddy counterfeit artist and you must recreate famous classical paintings!
+                        <br><br> Made with the Unity Game Engine and C#
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- this will be testing the portfolio blogs-->
+    <div class = "gallery">
+        <a href="./pages/magnet-run.html" class = "gallery">
+            <img class = "thumbnail" src ="assets/magnetRun/cover.png">
+            <div class = "block">
+                <div class = "title">
+                    <p><span>Magnet Run</span> </p>
+                </div>
+                <div class = "desc">
+                    <p class ="note"> 
+                        Play as Dippy as you venture through an educational 2D platformer about magnetism!
+                        <br><br> Made with the Unity Game Engine and C#
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class = "gallery">
+        <a href="./pages/rosa-project.html" class = "gallery">
+            <img class = "thumbnail" src ="assets/rosa/cover.png">
+            <div class = "block">
+                <div class = "title">
+                    <p><span>ROSA</span> </p>
+                </div>
+                <div class = "desc">
+                    <p class ="note"> 
+                        A collaborative project for a revamped college search application
+                        <br><br> Made with the Flutter framework and won Reed Business Start-Up Project Lab
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+</div>
+<script type=module src ="../js/templateLoader.js">
+</script>
+</body>
+</html>

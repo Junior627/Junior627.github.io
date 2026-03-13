@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> About Me </title>
+        <link rel="icon" type="image/x-icon" href="/../assets/squishy.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+    </head>
+</html>
+<script type=module src ="../js/templateLoader.js"></script>
+<body>
+    <my-header></my-header>
+
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> About Me!</h3>
+        <p> Game Developer, Programmer and Artist</p>
+    </div>
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="../assets/aboutMe/kinectMe.png">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)"src="../assets/aboutMe/kinectMe.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/aboutMe/withWeaver.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/aboutMe/stairPhoto.png">
+            </div>
+
+        </div>
+    </div>
+    <div class ="blank-space"></div>
+    
+    <div class ="page-body">
+        <div class ="overview">
+            <div class = "section-header">
+                <p> Hello!</p>
+            </div>
+            <p style="font-weight: bold;">
+                My name is Junior Siguencia, a first-generation Ecuadorian-American with an interest in all things videogame related.
+                <br><br>
+                I am a Wesleyan graduate with a B.A. in Computer Science and Integrated Design, Engineerings & Arts
+            </p>
+
+        </div>
+        <div class ="blank-space"></div>
+        <div class="design">
+        <div class="design-section">
+            <div class="section-title">
+                <h3> Something About Me</h3>
+            </div>
+            <div class ="line-break">
+                    
+                </div>
+             <p>
+                Since I was younger, I have always taken an interest into how things are designed and developed - particularly videogames. As I continue to learn and develop my programming and artistic capabilities, I hope to share the same joy of videogames I got from them! 
+
+                <br><br>
+                Since I have graduated, I continue to work in software development and videogame development. I am working on ink. with Jesse Hernson and trying to commit to a software project monthly for 2026!
+                <br><br>
+
+                I am actively searching for employment opportunities and open to any of them. I can work anywhere in the United States without restriction (will relocate if necessary!)
+                
+                
+            </p>
+        </div>
+           
+        </div>
+
+
+    </div>
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <div class="lightbox-container">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    <script src ="../js/portfolioViewer.js">
+</script>
+</body>

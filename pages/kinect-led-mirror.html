@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kinect LED Mirror </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../assets/squishy.png">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+</html>
+<script type=module src ="../js/templateLoader.js"></script>
+<body>
+    <my-header></my-header>
+
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> Kinect LED Mirror</h3>
+        <p> A Unique Spin on Mirrors</p>
+    </div>
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="../assets/videos/ledMirrorChair.gif">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)"src="../assets/videos/ledMirrorChair.gif">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectMirror/mirror.gif">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectMirror/ledSelfie.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectMirror/anotherSelfie.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectMirror/idea292_final_poster.png">
+            </div>
+        </div>
+    </div>
+    <div class ="blank-space"></div>
+    
+    <div class ="page-body">
+        <div class ="overview">
+            <div class = "section-header">
+                <p> Overview</p>
+            </div>
+            <p style="font-weight: bold;">
+                The Kinect LED Mirror is an experimental spin on mirrors disguised as an art piece! The "mirror" replicates the outline of anything within its range onto a 48 x 32 LED matrix
+            </p>
+            <div class="line-break"></div>
+            <p>
+                <strong>Role:</strong> Programmer & Engineer
+                <br>
+                <strong>Duration:</strong> November 2024 - December 2024
+                <br>
+                <strong>Medium:</strong> Interactive Light System
+                <br>
+                <strong>Team Size:</strong> 1
+                <br>
+            </p>
+        </div>
+        <div class ="blank-space"></div>
+        <div class="design">
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Responsibilities</h3>
+                    
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+                <p>
+                    Created for Wesleyan University's Interdisciplinary Project Lab class (IDEA292), the Kinect LED Mirror captures anything in its vision and replicates its outline via reflecting through an LED Matrix.
+                    <br><br>
+                    This was done with the Microsoft Kinect 360 and its depth sensors.
+                    
+                    By retrieving the depth data from the sensors and using a custom made filter program, I am able to gather plots of depth data from a 640x480 matrix and truncate the data to a 48x32 matrix.
+                    <br><br>
+                    
+                    This program was made in the C language and was installed to a Raspberry Pi using the Linux OS.
+
+                    <br><br>
+
+                    This mirror was held as a showcase for the IDEA292 final and is kept in Wesleyan University's Olin Library.
+
+                </p>
+            </div>
+            <div class="blank-space"></div>
+                <div class="design-section">
+                    <div class="section-title">
+                        <h3> Acknowledgements</h3>
+                    </div>
+                    <div class ="line-break">
+                    
+                </div>
+                    <p>
+                    I want to extend thanks to Professor Daniel Moller and Ben Parker for their help and advice in this project! Without their help in construction and electrical engineering experience, this project wouldn't have been as successful.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="lightbox-overlay" class="lightbox-overlay">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <div class="lightbox-container">
+                <img id="lightbox-img" src="" alt="">
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/portfolioViewer.js"></script>
+
+</body>

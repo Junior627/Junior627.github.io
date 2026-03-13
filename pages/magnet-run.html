@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Magnet Run </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/../assets/squishy.png">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+    </head>
+</html>
+<script type=module src ="../js/templateLoader.js"></script>
+<body>
+    <my-header></my-header>
+    
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> Magnet Run</h3>
+        <p> 2D Magnet-Platformer</p>
+    </div>
+
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="../assets/magnetRun/promoCover.png">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/magnetRun/promoCover.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/magnetRun/startingPoint.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/magnetRun/jumpTutorial.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/magnetRun/level2.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/magnetRun/levelTrans.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/magnetRun/endCutscene.png">
+            </div>
+        </div>
+    </div>
+
+    <div class ="blank-space"></div>
+    
+    <div class ="page-body">
+        <div class ="overview">
+            <div class = "section-header">
+                <p> Overview</p>
+            </div>
+            <p style="font-weight: bold;">
+                Magnet Run is a 2D platformer educational game where players must use the power of magnetism to traverse the world of Magnet Run to rescue their magnet friend!
+                <br><br>
+                This game was made for Wesleyan University's Videogame Development class
+            </p>
+            <div class="line-break"></div>
+            <p>
+                <strong>Role:</strong> Artist, Asset Integration, Programmer 
+                <br>
+                <strong>Duration:</strong> February 2023 - May 2023 (13 Weeks)
+                <br>
+                <strong>Medium:</strong> Digital Video Game Demo (made in Unity / C#)
+                <br>
+                <strong>Team Size:</strong> 5
+                <br>
+            </p>
+        </div>
+
+        <div class="blank-space"></div>
+        <div class="design">
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Responsibilities</h3>
+                    
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+                <h4>Asset Integration / Programmer</h4>
+                <p>
+                    As one of the artists and lead asset integrator, I was in charge of handling the look of Magnet Run. I also assisted in programming when needed
+                    <ul>
+                        <li>
+                            <p>
+                                Handled creationg of sprite sheets and how they are rendered in-game
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Utilized the timeline and animator tools to create animaitons and cutscenes
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Programmed systems that change the sprites depending on the context
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Co-reviewed movement and magnetism scripts, which were the main game mechanics
+                            </p>
+                        </li>
+
+                    </ul>
+                </p>
+            </div>
+                
+            <div class="blank-space"></div>
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Acknowledgements</h3>
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+                <p>
+                    I want to extend gratitude towards my team members Jacob Silberman-Baron, Pierce Hipp, Oliver Sheehan, and Henry Yang for their fantastic work! Special thanks to Professor Christopher Weaver, Reily Manton, & Jesse Herrnson for their advice in the development process
+                </p>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <div class="lightbox-container">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    <script src ="../js/portfolioViewer.js">
+</script>
+</body>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kinect-o-Ware </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/assets/squishy.png">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <my-fonts></my-fonts>
+</html>
+<script type=module src ="../js/templateLoader.js"></script>
+<body>
+    <my-header></my-header>
+
+    <div class="blank-space"></div>
+    <div class = "page-title">
+        <h3> Kinect-o-Ware</h3>
+        <p> An Interactive Competitve Game Show</p>
+    </div>
+
+    <div class="photo-section">
+        <div class="photo-display">
+            <div class="column side">
+                
+            </div>
+            <div class="column middle">
+                <img id="highlight-image" src="../assets/kinectOWare/winMinigame.png">
+            </div>
+            <div class="column side">
+                
+            </div>
+        </div>
+        <div class ="photo-row">
+            <div class="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/winMinigame.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/hintGame.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/shieldCat.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/grabApple.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/holeWall.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/findRat.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/magnetPull.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/makePizza.png">
+            </div>
+            <div class ="photo-standby">
+                <img onclick="changeDisplayImage(this)" src = "../assets/kinectOWare/slashGhost.png">
+            </div>
+        </div>
+    </div>
+
+    <div class ="blank-space"></div>
+    
+    <div class ="page-body">
+        <div class ="overview">
+            <div class = "section-header">
+                <p> Overview</p>
+            </div>
+            <p style="font-weight: bold;">
+                Kinect-o-Ware is a single player interactive video game where you are the controller! 
+                Compete in a game show where you try to reach the top of the leaderboard by competing various mini-challenges
+                <br><br>
+                This game was shown to the Wesleyan University student body and was available to play to the students in a held event. This project served as my senior capstone
+            </p>
+            <div class="line-break"></div>
+            <p>
+                <strong>Role:</strong> Director, Programmer, Artist
+                <br>
+                <strong>Duration:</strong> February 2025 - April 2025 (10 Weeks)
+                <br>
+                <strong>Medium:</strong> Digital Video Game (made in Unity / C#)
+                <br>
+                <strong>Team Size:</strong> 1
+                <br>
+            </p>
+        </div>
+        
+        <div class="blank-space"></div>
+        <div class="design">
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Responsibilities</h3>
+                    
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+                <h4> Gameplay Design</h4>
+                <p>
+                    The soul of this project was the interactivity the Kinect offers. 
+                    <br><br>
+                    Originally, this project only consisted of a minigame that drew inspiration from the Hole in the Wall game show. I utilized the Kinect's depth sensors to capture the user's body and display it on the screen as a moving texture.
+                    <br><br>
+                    This texture would then need to fill a static PNG texture which would act as the "hole" the player would need to fit through.
+                    For feedback reasons, I made it so that the pixels that overlap with the "hole" texture are a different color from the pixels of the player texture.
+                    <br><br>
+
+                    Below is the first iteration of the project
+                </p>
+                <video width="320" height="240" controls>
+                    <source src="assets/kinectOWare/kinectHoleVisual.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p> 
+                    Since the gameplay revolved around the actions the player can take with their body, I wanted to focus on three type of actions
+                    
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Full Body:</strong> This focused on the player moving their body around
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Two Hands:</strong> This focused on the player only moving their arms around
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>One Hand:</strong> This focused on the player moving their right hand or make motions (i.e. Swiping Left)
+                            </p>
+                        </li>
+                    </ul>
+
+                </p>
+                <div class="blank-space"></div>
+                <h4> Programming</h4>
+                <p>
+                    Utilzing this gameplay design, I wrote all the scripts needed to develop the videogame. here are some highlights
+                    <ul>
+                        <li>
+                            <p>
+                                System where minigames seamlessingly transition to each other
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Shader graphs to enhance player visibility for certain minigames
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Leaderboard system that writes and reads from the system files
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Validation screen that detects if player cannot be found and pauses the game to reconnect
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="blank-space"></div>
+            <div class="design-section">
+                <div class="section-title">
+                    <h3> Acknowledgements</h3>
+                </div>
+                <div class ="line-break">
+                    
+                </div>
+                <p>
+                    While this was a solo project, I want to give thanks to all those who supported on this journey, including my family members, my friends at Wesleyan and back at home, my capstone advisor, Professor Francis Starr, and all of Wesleyan CoDES department and game developer community for attentding and promoting the event! 
+                    
+                    <br><br>I want to extend special thanks to Nataly Siguencia and Keyla Lopez for their voices in-game and Celio Siguencia for his likeness
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <div class="lightbox-container">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    <script src ="../js/portfolioViewer.js">
+    </script>
+</body>
